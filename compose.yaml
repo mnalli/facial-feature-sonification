@@ -1,0 +1,8 @@
+services:
+  openface:
+    # TODO: is there a more appropriate image?
+    image: 'algebr/openface:latest'
+    container_name: openface
+    entrypoint: sleep infinity
+    volumes:
+      - './mount:/home/openface-build/files'
